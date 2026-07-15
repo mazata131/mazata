@@ -262,16 +262,16 @@
 <span class="kw">const</span> <span class="plain">Adam</span> = <span class="str">"pan młody"</span>;
 <span class="kw">let</span> <span class="plain">szokocitrone</span> = <span class="plain">Infinity</span>;
 
-<span class="kw">function</span> <span class="fn">czyZostanieszSwiadkiem</span>(<span class="plain">Kacper</span>) {
-  <span class="kw">if</span> (Kacper.nieZgubiSieMPoDrodze && Kacper.maZelaznaWatrobe) {
+<span class="kw">function</span> <span class="fn">czyZostanieszMoimSwiadkiem</span>?(<span class="plain">Kacper</span>) {
+  <span class="kw">if</span> (Kacper.nieZgubiSiePoDrodze && Kacper.maZelaznaWatrobe) {
     <span class="kw">return</span> <span class="str">"zaszczyt"</span>;
   }
   <span class="kw">throw new</span> <span class="fn">Error</span>(<span class="str">"nie ma opcji odmowy, przykro mi"</span>);
 }
 
 <span class="kw">try</span> {
-  <span class="kw">const</span> werdykt = <span class="fn">czyZostanieszSwiadkiem</span>({
-    nieZgubiSieMPoDrodze: <span class="plain">true</span>,
+  <span class="kw">const</span> werdykt = <span class="fn">czyZostanieszMoimSwiadkiem</span>({
+    nieZgubiSiePoDrodze: <span class="plain">true</span>,
     maZelaznaWatrobe: <span class="plain">true</span>
   });
   console.<span class="fn">log</span>(<span class="str">"Kacper.status = "</span> + werdykt);
